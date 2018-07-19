@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.summary          = 'UIButton图文混排自动调整布局，不用自己计算titleEdgeInsets和imageEdgeInsets.'
   s.homepage         = 'https://github.com/krisouljz/UIButton-Relayout'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'krisouljz' => 'lvjiazhen@icarbonx.com' }
+  s.author           = { 'krisouljz' => '1435073930@qq.com' }
   s.source           = { :git => 'https://github.com/krisouljz/UIButton-Relayout.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
 
