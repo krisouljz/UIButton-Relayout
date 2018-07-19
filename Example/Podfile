@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'UIButton-Relayout_Example' do
+  pod 'UIButton-Relayout', :path => '../'
+
+  target 'UIButton-Relayout_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
