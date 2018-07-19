@@ -8,8 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIButton-Relayout'
-  s.version          = '0.1.1'
+  s.version          = '0.1.0'
   s.summary          = 'UIButton图文混排自动调整布局，不用自己计算titleEdgeInsets和imageEdgeInsets.'
+  s.description      = <<-DESC
+  TODO: Add long description of the pod here.
+                        DESC
+  
   s.homepage         = 'https://github.com/krisouljz/UIButton-Relayout'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'krisouljz' => '1435073930@qq.com' }
