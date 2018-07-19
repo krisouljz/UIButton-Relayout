@@ -1,0 +1,6 @@
+framework module UIButton_Relayout {
+  umbrella header "UIButton-Relayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

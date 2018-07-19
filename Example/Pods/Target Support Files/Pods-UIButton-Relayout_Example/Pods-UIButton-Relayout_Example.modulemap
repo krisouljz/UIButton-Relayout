@@ -1,0 +1,6 @@
+framework module Pods_UIButton_Relayout_Example {
+  umbrella header "Pods-UIButton-Relayout_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

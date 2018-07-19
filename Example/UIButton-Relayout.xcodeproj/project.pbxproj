@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2983330D00EA827B603D7EC1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2983330D00EA827B603D7EC1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3BDEDACE98B8622AAE74C237 /* Pods-UIButton-Relayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButton-Relayout_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIButton-Relayout_Example/Pods-UIButton-Relayout_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3FF0245C96C3E82532F2560C /* Pods_UIButton_Relayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIButton_Relayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEC3DD15FECD0C590E28B58 /* Pods_UIButton_Relayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIButton_Relayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,9 +62,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		65A9FDCCFDA9329F74B0548A /* Pods-UIButton-Relayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButton-Relayout_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIButton-Relayout_Tests/Pods-UIButton-Relayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6E187FCAF69A9E65BD3C5693 /* UIButton-Relayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "UIButton-Relayout.podspec"; path = "../UIButton-Relayout.podspec"; sourceTree = "<group>"; };
+		6E187FCAF69A9E65BD3C5693 /* UIButton-Relayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "UIButton-Relayout.podspec"; path = "../UIButton-Relayout.podspec"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		77D545026AECDA09063BE470 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		77D545026AECDA09063BE470 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8D03D7251D98666CFD4DA0A /* Pods-UIButton-Relayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButton-Relayout_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIButton-Relayout_Tests/Pods-UIButton-Relayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -247,6 +247,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = krisouljz;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 25Z7TLLCR9;
+						ProvisioningStyle = Automatic;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -319,10 +323,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UIButton-Relayout_Example/Pods-UIButton-Relayout_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/UIButton-Relayout/UIButton_Relayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIButton_Relayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,12 +491,16 @@
 			baseConfigurationReference = 5509BBB1769C843735A43B4F /* Pods-UIButton-Relayout_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25Z7TLLCR9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIButton-Relayout/UIButton-Relayout-Prefix.pch";
 				INFOPLIST_FILE = "UIButton-Relayout/UIButton-Relayout-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krisouljz.UIButton-Relayout";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -500,12 +510,16 @@
 			baseConfigurationReference = 3BDEDACE98B8622AAE74C237 /* Pods-UIButton-Relayout_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25Z7TLLCR9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIButton-Relayout/UIButton-Relayout-Prefix.pch";
 				INFOPLIST_FILE = "UIButton-Relayout/UIButton-Relayout-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.krisouljz.UIButton-Relayout";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

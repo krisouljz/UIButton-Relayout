@@ -1,0 +1,23 @@
+PODS:
+  - Masonry (1.1.0)
+  - UIButton-Relayout (0.1.0)
+
+DEPENDENCIES:
+  - Masonry
+  - UIButton-Relayout (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  UIButton-Relayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  UIButton-Relayout: e90f0f73de57832a1041fee2b4b54d35b1bbe1af
+
+PODFILE CHECKSUM: d246b959736b42e8cb96f7cd20c81c74e7baf665
+
+COCOAPODS: 1.5.3

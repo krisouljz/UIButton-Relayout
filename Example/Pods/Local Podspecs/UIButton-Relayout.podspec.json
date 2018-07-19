@@ -1,0 +1,22 @@
+{
+  "name": "UIButton-Relayout",
+  "version": "0.1.0",
+  "summary": "A short description of UIButton-Relayout.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/krisouljz/UIButton-Relayout",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "krisouljz": "lvjiazhen@icarbonx.com"
+  },
+  "source": {
+    "git": "https://github.com/krisouljz/UIButton-Relayout.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "UIButton-Relayout/Classes/**/*"
+}
