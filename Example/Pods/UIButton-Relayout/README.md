@@ -22,7 +22,7 @@ pod 'UIButton-Relayout'
 
 ## Author
 
-krisouljz, 1435073930@qq.com
+krisouljz, lvjiazhen@icarbonx.com
 
 ## License
 

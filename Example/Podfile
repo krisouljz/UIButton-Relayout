@@ -3,7 +3,8 @@ use_frameworks!
 target 'UIButton-Relayout_Example' do
     
   pod 'UIButton-Relayout', :path => '../'
-  pod 'Masonry'
+#    pod 'UIButton-Relayout'
+    pod 'Masonry'
 
   target 'UIButton-Relayout_Tests' do
     inherit! :search_paths

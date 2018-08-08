@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIButton-Relayout'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'UIButton图文混排自动调整布局，不用自己计算titleEdgeInsets和imageEdgeInsets.'
   s.description      = <<-DESC
   TODO: Add long description of the pod here.

@@ -1,7 +1,7 @@
 {
   "name": "UIButton-Relayout",
   "version": "0.1.0",
-  "summary": "A short description of UIButton-Relayout.",
+  "summary": "UIButton图文混排自动调整布局，不用自己计算titleEdgeInsets和imageEdgeInsets.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/krisouljz/UIButton-Relayout",
   "license": {
@@ -9,7 +9,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "krisouljz": "lvjiazhen@icarbonx.com"
+    "krisouljz": "1435073930@qq.com"
   },
   "source": {
     "git": "https://github.com/krisouljz/UIButton-Relayout.git",
